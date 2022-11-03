@@ -7,6 +7,7 @@ intoxic_correct = 0
 intoxic_wrong = 0
 wrong = 0
 trial = 0
+
 for line in open('./data/train.jsonl', 'r'):
     if trial == 100:
         break
@@ -28,6 +29,7 @@ for line in open('./data/train.jsonl', 'r'):
         print(toxicity)
         print(path)
     trial+=1
+    
 print(toxic_correct)
 print(toxic_wrong)
 print(intoxic_correct)
